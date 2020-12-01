@@ -1,0 +1,14 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content-wrapper{
+  display: flex;
+  flex-direction: row;
+  transition: all ease-out 0.4s;
+  height: calc(100vh - var(--fox-app-bar-height));
+}
