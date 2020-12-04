@@ -9,11 +9,19 @@ import '@assecosolutions/fox-app-bar';
 import '@assecosolutions/fox-back-layer';
 import '@assecosolutions/fox-content-layer';
 import '@assecosolutions/fox-front-layer';
+import reactifyWc from "reactify-wc";
 
 function App() {
+
+
+    const selected = (e: Event) => console.log("hello world", e);
+
+    const FoxSelect = reactifyWc("fox-select") as any;
+
     return (
 
         <div className="App">
+
             <fox-app-bar></fox-app-bar>
             <div className="content-wrapper">
                 <fox-back-layer></fox-back-layer>
@@ -21,13 +29,14 @@ function App() {
                     <fox-content-layer>
                         <div slot="body" className="h-100 p-3">
                             <h4>FOX Select </h4>
-                            <fox-select>
+
+                            <FoxSelect on-selected={selected}>
                                 <fox-list-item>1</fox-list-item>
                                 <fox-list-item>2</fox-list-item>
                                 <fox-list-item>3</fox-list-item>
                                 <fox-list-item>4</fox-list-item>
                                 <fox-list-item>5</fox-list-item>
-                            </fox-select>
+                            </FoxSelect>
 
                             <h4>FOX list </h4>
                             <fox-list>
@@ -54,6 +63,7 @@ function App() {
             </div>
         </div>
     );
+
 }
 
 export default App;
