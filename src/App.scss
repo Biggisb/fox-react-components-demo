@@ -1,4 +1,4 @@
-.App{
+.App {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -6,9 +6,13 @@
   overflow: hidden;
 }
 
-.content-wrapper{
+.content-wrapper {
   display: flex;
   flex-direction: row;
   transition: all ease-out 0.4s;
   height: calc(100vh - var(--fox-app-bar-height));
+}
+
+.content-body {
+  background: #fafbfc;
 }

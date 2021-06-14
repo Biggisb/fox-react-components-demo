@@ -3,17 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@assecosolutions/common": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/common": "^0.0.1-alpha.7.0.2",
     "@assecosolutions/fox-app-bar": "^0.0.1-alpha.1",
     "@assecosolutions/fox-back-layer": "^0.0.1-alpha.7.0.1",
-    "@assecosolutions/fox-button": "^0.0.1-alpha.7.0.1",
-    "@assecosolutions/fox-checkbox": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-badge": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-button": "^1.0.1-fox",
+    "@assecosolutions/fox-card": "^1.0.1-fox",
+    "@assecosolutions/fox-checkbox": "^1.0.1-fox",
+    "@assecosolutions/fox-common": "^0.0.1-alpha.1",
     "@assecosolutions/fox-content-layer": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-formfield": "^0.0.1-alpha.7.0.1",
     "@assecosolutions/fox-front-layer": "^0.0.1-alpha.1",
+    "@assecosolutions/fox-icon": "^0.0.1-alpha.7.0.11",
     "@assecosolutions/fox-list": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-progress": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-radio": "^0.0.1-alpha.7.0.1",
     "@assecosolutions/fox-select": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-sidebar": "^0.0.1-alpha.7.0.1",
     "@assecosolutions/fox-slider": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-snackbar": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-table": "^0.0.1-alpha.7.0.1",
+    "@assecosolutions/fox-table-view": "^0.0.1-alpha.7.0.2",
+    "@assecosolutions/fox-textarea": "^0.0.1-alpha.7.0.1",
     "@assecosolutions/fox-textfield": "^0.0.1-alpha.7.0.1",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -21,10 +34,12 @@
     "@types/node": "^12.0.0 ",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router": "^5.1.11",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "reactify-wc": "^4.0.0",
     "typescript": "^4.0.3",
@@ -65,5 +80,8 @@
       "from": "node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
       "to": "public/vendor/webcomponents-bundle.js"
     }
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
 }
